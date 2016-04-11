@@ -45,6 +45,10 @@ app.get('/events', function (req, res){
 })
 // [END hello_world]
 
+app.get('/', function (req, res){
+  res.redirect('/main');
+})
+
 if (module === require.main) {
   // [START server]
   // Start the server
